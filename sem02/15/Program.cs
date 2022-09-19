@@ -13,9 +13,11 @@ var days = new Dictionary<int, string>()
     {0, "Sunday"}
 };
 
-if (dayNumber != 0) {
-    Console.Write($"The day {dayNumber} - {days[(dayNumber % 7)]}");
-    if (((dayNumber % 7) == 0) || ((dayNumber % 7) == 6)) {
+int dayNum7 = dayNumber % 7;
+
+if (dayNumber > 0) {
+    Console.Write($"The day {dayNumber} - {days[dayNum7]}");
+    if ((dayNum7 == 0) || (dayNum7 == 6)) {
         Console.ForegroundColor = ConsoleColor.Green;
         Console.Write(" and YES this day is a holiday!");
         Console.ForegroundColor = ConsoleColor.White;
@@ -23,5 +25,5 @@ if (dayNumber != 0) {
     else Console.Write(" and NO this day isn't holiday! =(");
 }
 else {
-    Console.WriteLine("And there was nothing yet on day zero!");
+    Console.WriteLine($"And there was nothing yet on day {dayNumber}!");
 }
