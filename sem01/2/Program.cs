@@ -1,7 +1,7 @@
 ﻿Console.Write("Please enter the first number: ");
-string first_string_number =  Console.ReadLine();
+string first_string_number =  Console.ReadLine()!;
 Console.Write("Please enter the second number: ");
-string second_string_number =  Console.ReadLine();
+string second_string_number =  Console.ReadLine()!;
 
 int number_first = int.Parse(first_string_number);
 int number_second = int.Parse(second_string_number);
