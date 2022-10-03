@@ -1,5 +1,5 @@
 ﻿//В контексте задачи, отрицательные числа не рассматривались
-Console.Clear();
+// Console.Clear();
 Console.Write("Введите число в десятичной системе исчисления: ");
 int m = int.Parse(Console.ReadLine()!);
 Dectobin(m);
@@ -8,8 +8,8 @@ void Dectobin(int dec, int f = 1, string s = "")
 {   
     if (((dec == 1) || (dec == 0)) && (f == 1))
     {
-        if(dec == 0) Console.Write("0");
-        if(dec == 1) Console.Write("1");
+        if(dec == 0) Console.Write($"Число {m} в двоичной системе исчисления -> 0");
+        if(dec == 1) Console.Write($"Число {m} в двоичной системе исчисления -> 1");
     }
     else 
     {
@@ -27,7 +27,8 @@ void Dectobin(int dec, int f = 1, string s = "")
             s = s + "1";
             char[] arr = s.ToCharArray();
             Array.Reverse(arr);
-            Console.WriteLine(arr);
+            Console.Write($"Число {m} в двоичной системе исчисления -> ");
+            Console.Write(arr);
         }
     }
 }
