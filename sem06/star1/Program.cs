@@ -1,5 +1,5 @@
 ﻿//В контексте задачи, отрицательные числа не рассматривались
-// Console.Clear();
+Console.Clear();
 Console.Write("Введите число в десятичной системе исчисления: ");
 int m = int.Parse(Console.ReadLine()!);
 Dectobin(m);
