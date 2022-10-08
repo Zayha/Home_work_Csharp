@@ -56,8 +56,10 @@ void ShowFibonacciNumbersFor(int n, int fibnum1 = 0, int fibnum2 = 1)
 }
 
 
-void ShowFibonacciNumbersBine(int n, double goldensection = 1.618034)
-{
+void ShowFibonacciNumbersBine(int n)
+{   
+    double goldensection = (1 + Math.Sqrt(5) / 2);
+    Console.WriteLine("Формула вычисляет с погрешностью!");
     Console.Write($"{n} -> ");
     for (int i = 0; i < n; i++)
     {
