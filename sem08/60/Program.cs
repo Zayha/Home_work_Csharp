@@ -1,5 +1,5 @@
 ﻿Console.Clear();
-Console.Write("Укажите размерность 3d массив через пробел a b c: ");
+Console.Write("Укажите размерность 3d массив через пробел a b c (произведение сторон < 100): ");
 int[] matrixSize = Console.ReadLine()!.Split(' ').Select(e => Convert.ToInt32(e)).ToArray();
 
 Show3DMatrixIndex(Creat3DMatrix(matrixSize));
